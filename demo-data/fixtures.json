@@ -1,0 +1,55 @@
+{
+  "index_name": "authorized-demo-index",
+  "description": "LOCAL DEMO FIXTURES ONLY - synthetic AI-generated images provided by the project author. This simulates a public image index for the DEMO MODE reverse search. Never used in LIVE mode.",
+  "entries": [
+    {
+      "id": "f1",
+      "file": "subject_repost_copy.jpg",
+      "url": "https://demo-index.local/fixtures/subject_repost_copy.jpg",
+      "domain": "demo-index.local",
+      "title": "Authorized test subject - reposted copy"
+    },
+    {
+      "id": "f2",
+      "file": "stock_portrait_3182.jpg",
+      "url": "https://demo-index.local/fixtures/stock_portrait_3182.jpg",
+      "domain": "demo-index.local",
+      "title": "Synthetic portrait fixture"
+    },
+    {
+      "id": "f3",
+      "file": "tech_banner_1041.png",
+      "url": "https://demo-index.local/fixtures/tech_banner_1041.png",
+      "domain": "demo-index.local",
+      "title": "Synthetic AI banner fixture"
+    },
+    {
+      "id": "f4",
+      "file": "dashboard_shot_2077.png",
+      "url": "https://demo-index.local/fixtures/dashboard_shot_2077.png",
+      "domain": "demo-index.local",
+      "title": "Synthetic dashboard fixture"
+    },
+    {
+      "id": "f5",
+      "file": "cube_render_5533.png",
+      "url": "https://demo-index.local/fixtures/cube_render_5533.png",
+      "domain": "demo-index.local",
+      "title": "Synthetic cube fixture"
+    },
+    {
+      "id": "f6",
+      "file": "network_art_8890.png",
+      "url": "https://demo-index.local/fixtures/network_art_8890.png",
+      "domain": "demo-index.local",
+      "title": "Synthetic network fixture"
+    },
+    {
+      "id": "f7",
+      "file": "hud_scope_6621.png",
+      "url": "https://demo-index.local/fixtures/hud_scope_6621.png",
+      "domain": "demo-index.local",
+      "title": "Synthetic HUD fixture"
+    }
+  ]
+}

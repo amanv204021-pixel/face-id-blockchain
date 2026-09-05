@@ -1,0 +1,19 @@
+# runtime data (chain + records + temp uploads)
+backend/data/
+
+# node
+node_modules/
+dist/
+
+# python
+__pycache__/
+*.pyc
+.venv/
+
+# env & secrets
+.env
+*.key
+
+# solc
+blockchain/artifacts/
+.build/

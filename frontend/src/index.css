@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  background: #04060e;
+  color: #e2e8f0;
+  font-family: "Segoe UI", Inter, system-ui, sans-serif;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(34,211,238,0.25); border-radius: 3px; }
+
+.glass {
+  background: rgba(10, 17, 32, 0.55);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(34, 211, 238, 0.18);
+  box-shadow: 0 0 30px rgba(34, 211, 238, 0.07), inset 0 0 24px rgba(34, 211, 238, 0.02);
+}
+
+.neon-text-cyan { text-shadow: 0 0 12px rgba(34,211,238,0.8), 0 0 40px rgba(34,211,238,0.4); }
+.neon-text-magenta { text-shadow: 0 0 12px rgba(232,121,249,0.8), 0 0 40px rgba(232,121,249,0.4); }
+.neon-text-green { text-shadow: 0 0 12px rgba(52,211,153,0.8), 0 0 40px rgba(52,211,153,0.4); }
+
+.scanlines::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(0deg, rgba(34,211,238,0.03) 0 1px, transparent 1px 3px);
+}
+
+.hash-font { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.02em; }
