@@ -6,7 +6,10 @@ const j = async (r: Response): Promise<any> => {
   return r.json()
 }
 
-const API_BASE = (import.meta.env.VITE_API_URL || '').replace(/\/$/, '')
+const API_BASE = (
+  import.meta.env.VITE_API_URL ||
+  (import.meta.env.PROD ? 'https://face-id-blockchain-api.onrender.com' : '')
+).replace(/\/$/, '')
 const endpoint = (path: string) => `${API_BASE}${path}`
 
 export const api = {
