@@ -1,3 +1,5 @@
+https://faceid-blockchain.vercel.app/
+
 # FACE ID + BLOCKCHAIN VERIFICATION
 
 A futuristic **3D interactive pipeline** that demonstrates an end-to-end
@@ -230,3 +232,18 @@ See `docs/limitations.md` for the full list.
 *Built for hackathon judging: the animation is the architecture — every
 particle you see flying between scenes corresponds to a real HTTP call or a
 real hash computation happening in the backend.*
+<img width="1180" height="720" alt="image" src="https://github.com/user-attachments/assets/7443ff4a-0949-4047-8e64-8a90270975f1" />
+<img width="1180" height="720" alt="image" src="https://github.com/user-attachments/assets/01b986cf-c51e-4079-94a7-7757414083c4" />
+<img width="1180" height="720" alt="image" src="https://github.com/user-attachments/assets/85455c05-1a0e-41f0-8b88-b8c48eb24465" />
+<img width="1180" height="720" alt="image" src="https://github.com/user-attachments/assets/65308536-77b5-4c93-8d19-c57ad15784ab" />
+<img width="1180" height="720" alt="image" src="https://github.com/user-attachments/assets/19aff76c-45dc-4571-8fb8-90b684a23284" />
+<img width="1180" height="720" alt="image" src="https://github.com/user-attachments/assets/874b8546-eb03-4513-af0f-05470a05166b" />
+<img width="1180" height="720" alt="image" src="https://github.com/user-attachments/assets/e18e04c3-ad8b-4723-8a6c-8ee6ff29336e" />
+
+
+
+
+
+
+
+
