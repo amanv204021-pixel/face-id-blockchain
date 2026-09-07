@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc --noEmit && vite build",
+    "build": "vite",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit"
   },
@@ -30,10 +30,5 @@
     "tailwindcss": "3.4.10",
     "typescript": "5.5.4",
     "vite": "5.4.8"
-  },
-  "scripts": {
-  "dev": "vite",
-  "build": "vite",
-  "preview": "vite preview"
+  }
 }
-
