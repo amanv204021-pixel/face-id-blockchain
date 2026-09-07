@@ -10,7 +10,7 @@ DATA_DIR = BACKEND / "data"
 UPLOAD_DIR = DATA_DIR / "uploads"
 RECORDS_DIR = DATA_DIR / "records"
 CHAIN_FILE = DATA_DIR / "chain.json"
-DEMO_DIR = ROOT / "demo-data"
+DEMO_DIR = Path(os.getenv("DEMO_DIR", str(ROOT / "demo-data")))
 
 for d in (DATA_DIR, UPLOAD_DIR, RECORDS_DIR):
     d.mkdir(parents=True, exist_ok=True)
