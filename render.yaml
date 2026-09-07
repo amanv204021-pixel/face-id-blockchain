@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: face-id-blockchain-api
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/health
+    envVars:
+      - key: REVERSE_SEARCH_PROVIDER
+        value: demo
+      - key: GOOGLE_VISION_API_KEY
+        sync: false
+      - key: BLOCKCHAIN_RPC_URL
+        sync: false
+      - key: BLOCKCHAIN_PRIVATE_KEY
+        sync: false
+      - key: CONTRACT_ADDRESS
+        sync: false

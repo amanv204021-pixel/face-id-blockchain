@@ -6,28 +6,31 @@ const j = async (r: Response): Promise<any> => {
   return r.json()
 }
 
+const API_BASE = (import.meta.env.VITE_API_URL || '').replace(/\/$/, '')
+const endpoint = (path: string) => `${API_BASE}${path}`
+
 export const api = {
-  health: () => fetch('/api/health').then(j),
+  health: () => fetch(endpoint('/api/health')).then(j),
 
   runPipeline: (file?: File) => {
     const fd = new FormData()
     if (file) fd.append('file', file)
-    return fetch('/api/pipeline/run', { method: 'POST', body: fd }).then(j)
+    return fetch(endpoint('/api/pipeline/run'), { method: 'POST', body: fd }).then(j)
   },
 
   verify: (tx: string) =>
-    fetch(`/api/blockchain/verify/${encodeURIComponent(tx.trim())}`).then(j),
+    fetch(endpoint(`/api/blockchain/verify/${encodeURIComponent(tx.trim())}`)).then(j),
 
   tamper: (tx: string) =>
-    fetch(`/api/demo/tamper?tx_hash=${encodeURIComponent(tx)}`, { method: 'POST' }).then(j),
+    fetch(endpoint(`/api/demo/tamper?tx_hash=${encodeURIComponent(tx)}`), { method: 'POST' }).then(j),
 
   restore: (tx: string) =>
-    fetch(`/api/demo/restore?tx_hash=${encodeURIComponent(tx)}`, { method: 'POST' }).then(j),
+    fetch(endpoint(`/api/demo/restore?tx_hash=${encodeURIComponent(tx)}`), { method: 'POST' }).then(j),
 
-  resetChain: () => fetch('/api/demo/reset-chain', { method: 'POST' }).then(j),
+  resetChain: () => fetch(endpoint('/api/demo/reset-chain'), { method: 'POST' }).then(j),
 
   fetchDemoImage: async (): Promise<File> => {
-    const r = await fetch('/api/demo/image')
+    const r = await fetch(endpoint('/api/demo/image'))
     if (!r.ok) throw new Error('demo image unavailable')
     const blob = await r.blob()
     if (!blob.type.startsWith('image/')) throw new Error('demo fixture is not an image — check backend')
